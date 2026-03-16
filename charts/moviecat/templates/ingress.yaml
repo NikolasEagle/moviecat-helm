@@ -34,7 +34,7 @@ spec:
               service:
                 name: {{ printf "%s-service" $.Chart.Name }}
                 port:
-                  number: {{ $.Values.service.port }}
+                  number: {{ $.Values.frontend.port }}
           {{- end }}
     {{- end }}
 ---

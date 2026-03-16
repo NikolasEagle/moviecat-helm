@@ -1,4 +1,4 @@
-{{- if $.Values.service.enabled }}
+{{- if $.Values.frontend.enabled }}
 ---
 apiVersion: v1
 kind: Service
@@ -7,11 +7,11 @@ metadata:
 spec:
   selector:
     app: {{ printf "%s-app" .Chart.Name }}
-  type: {{ $.Values.service.type }}
+  type: {{ $.Values.frontend.type }}
   ports:
   - name: {{ .Chart.Name }}
-    protocol: {{ $.Values.service.protocol }}
-    port: {{ $.Values.service.port }}
-    targetPort: {{ $.Values.service.targetPort }}
+    protocol: {{ $.Values.frontend.protocol }}
+    port: {{ $.Values.frontend.port }}
+    targetPort: {{ $.Values.frontend.targetPort }}
 ---
 {{- end }}
