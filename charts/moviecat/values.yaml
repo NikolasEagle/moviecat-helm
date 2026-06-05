@@ -18,7 +18,7 @@ frontend:
   image:
     repository: registry.gitlab.com/eagledevstack/moviecat-web
     pullPolicy: IfNotPresent
-    tag: "fc1a5d21"
+    tag: "5bb8cdc1"
   type: ClusterIP
   protocol: TCP
   port: 3000
