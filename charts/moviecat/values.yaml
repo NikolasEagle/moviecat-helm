@@ -30,7 +30,7 @@ backend:
   image:
     repository: registry.gitlab.com/eagledevstack/moviecat-backend
     pullPolicy: IfNotPresent
-    tag: "a499c7fc"
+    tag: "bb9220cb"
   volumeMounts: []
   resources: {}
 
